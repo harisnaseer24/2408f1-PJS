@@ -1,0 +1,4 @@
+Scripting
+Client side Scripting (Javascript)
+Server side Scripting (php, laravel, .net, MERN Stack)
+
