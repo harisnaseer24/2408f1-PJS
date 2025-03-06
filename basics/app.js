@@ -234,29 +234,80 @@ console.log( 90-5>=23 ?"hi":"bye");
 
 
 //arrrays (collection of elements/values)
-let students=["Ali","Ahmed","Haris","Kabeer","Shehzad"];
-let employees=["Ali","Ahmed","Haris","Kabeer","Shehzad"];
-let Dishes=["Biryani","Qorma","Karahi","Handi","Pulao","Kabab"];
+// let students=["Ali","Ahmed","Haris","Kabeer","Shehzad"];
+// let employees=["Ali","Ahmed","Haris","Kabeer","Shehzad"];
+// let Dishes=["Biryani","Qorma","Karahi","Handi","Pulao","Kabab"];
 
 // index = 0-4
 // length = 5
-console.log(students.length)
-console.log(students[3]);
-for(let i=0;i<students.length; i++){
+// console.log(students.length)
+// console.log(students[3]);
+// for(let i=0;i<students.length; i++){
 
-    // document.write("Name => "+students[i] +"<br>");
-    document.write(`Name => ${students[i]} <br>`);//string interpolation
-}
+//     // document.write("Name => "+students[i] +"<br>");
+//     document.write(`Name => ${students[i]} <br>`);//string interpolation
+// }
 
-function printArray(arr,heading){
-    for(let i=0; i<arr.length;i++){
-        document.write(`${heading +" "+ (i+1)}  : ${arr[i]}<br>`);
-    }
-}
+// function printArray(arr,heading){
+//     for(let i=0; i<arr.length;i++){
+//         // age +"years old" => `${age} years old`
+//         document.write(`${heading +" "+ (i+1)}  : ${arr[i]}<br>`);
+//     }
+// }
 
-printArray(students,"Students");
-printArray(employees,"Employees");  
-printArray(Dishes,"Dishes");
+// printArray(students,"Students");
+// printArray(employees,"Employees");  
+// printArray(Dishes,"Dishes");
+// let students=["Ali","Ahmed","Haris","Kabeer","Shehzad"];
+
+// push insert an element at last index of an array and returns the new length of an array
+// console.log(students.push("Javed"));
+// console.log(students);
+
+// //pop removes an element from last index of an array and returns the removed element.
+// console.log(students.pop());//Javed
+// console.log(students);
+
+//unshift add at start
+// console.log(students.unshift("Owais")) //6
+// console.log(students)
+
+// //shift removes from start
+// console.log(students.shift())//Owais
+// console.log(students)
+
+//splice
+//              start index, no of elements to be removed, elements to be inserted
+// students.splice(2               ,1                               );
+// students.splice(2               ,2           ,"Haris Naseer" ,"Owais"                 );
+// console.log(students)
+//mutable -> can be changed
+//immuatable => cannot be changed
+//slice
+// let goodStudents=students.slice(3,5);//start index,end length
+// console.log(goodStudents)
+// console.log(students)
+
+let students=["Ali","Ahmed","Haris","Kabeer","Shehzad"];
+//map
+let respectedStudents=students.map((stud)=>{   return "Mr."+stud });
+let lowerCaseStudents=students.map((stud)=>{   return stud.toLowerCase() });
+console.log(respectedStudents)
+console.log(lowerCaseStudents)
+
+//filter
+//includes
+//find
+//reduce
+//sort
+//reverse
+//join
+//split
+
+//search functionality
+
+//functions
+
 
 
 //objects

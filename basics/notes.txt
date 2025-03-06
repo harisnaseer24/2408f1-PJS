@@ -2,3 +2,10 @@ Scripting
 Client side Scripting (Javascript)
 Server side Scripting (php, laravel, .net, MERN Stack)
 
+//objects
+//dom
+//regexp
+//web worker
+//minification
+//es6
+//asychronous programming
