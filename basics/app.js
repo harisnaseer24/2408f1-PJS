@@ -135,7 +135,7 @@
 
 // ternary operator
 
-console.log( 90-5>=23 ?"hi":"bye");
+// console.log( 90-5>=23 ?"hi":"bye");
 
 
 //loop (to repeat a task till a condition)
@@ -288,32 +288,66 @@ console.log( 90-5>=23 ?"hi":"bye");
 // console.log(goodStudents)
 // console.log(students)
 
-let students=["Ali","Ahmed","Haris","Kabeer","Shehzad"];
-//map
-let respectedStudents=students.map((stud)=>{   return "Mr."+stud });
-let lowerCaseStudents=students.map((stud)=>{   return stud.toLowerCase() });
-console.log(respectedStudents)
-console.log(lowerCaseStudents)
+// let students=["Ali","Ahmed","Haris","Kabeer","Shehzad"];
+// //map
+// let respectedStudents=students.map((stud)=>{   return "Mr."+stud });
+// let lowerCaseStudents=students.map((stud)=>{   return stud.toLowerCase() });
+// console.log(respectedStudents)
+// console.log(lowerCaseStudents)
+
+//includes returns true or falsse
 
 //filter
-//includes
+// let filteredStudents=students.filter(
+//     (student)=>{
+//         if(student.includes("A")){
+//             return student;
+//         }
+//     }
+// )
+// console.log(filteredStudents)
+
 //find
 //reduce
 //sort
 //reverse
 //join
 //split
-
-//search functionality
-
-//functions
-
-
-
 //objects
+
+let person={
+    name:"Haris",
+    age:24,
+    isPakistani:true,
+    hobbies:["coding","reading","gaming"],
+    // address:{
+    //     city:"Karachi",
+    //     country:"Pakistan"
+    // },
+   
+}
+person.hobbies[1]="writing";
+console.log(person.hobbies[1]);
+// console.log(person.address.country);//. notation
+// console.log(person['address']['country']);//index notation
+
+//for in loop
+for(let key in person){
+    console.log(key+" : "+person[key]);
+}
+
+
+
+//search functionality - in other file
+
 //dom
+
+
+
+//es6
+//asychronous programming
+//api
+
 //regexp
 //web worker
 //minification
-//es6
-//asychronous programming
