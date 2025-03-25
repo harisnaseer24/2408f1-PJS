@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous Javascript</title>
+</head>
+<body>
+    
+
+
+
+</body>
+<script>
+//Synchronous code (line by line execution)
+// console.log("hello")
+// console.log("hello")
+// console.log("hello")
+// console.log("hello")
+// console.log("hello")
+// console.log("hello")
+// console.log("hello")
+// console.log("hello")
+// console.log("hello")
+// console.log("hello")
+// console.log("hello")
+
+//Asynchronous code
+
+// console.log("hello")
+// console.log("hello")
+// console.log("hello")
+// console.log("hello")
+// setTimeout(()=>{
+//     console.log("bye")
+// },0.1)
+// console.log("hello")
+// console.log("hello")
+// console.log("hello")
+// console.log("hello")
+// console.log("hello")
+// console.log("hello")
+// set interval
+// setInterval(()=>{
+//     console.log("bye")
+// },2000)
+
+// Call back funtions (wo function jisme aik or function ko call kia jata hai)
+
+//anonymous function (a function with no name)
+// setInterval(()=>{
+//     console.log("bye")
+// },2000)
+
+//Call back example:
+// function first(){
+//     console.log("This is first function")
+// }
+
+// let second = (anotherFunction())=>{
+//     console.log("This is second function calling another function:");
+//     anotherFunction();
+// }
+
+// second(first);
+
+// //Callback hell 
+// second(second(second(second(second(first)))))
+
+
+//Promises (accept/reject)
+// let burgerKhilaya=true;
+// let treat = new Promise((accept,reject)=>{
+//     if (accept) {
+//         console.log("Burger khilane ka shukria.")
+//     } else {
+//         console.log("Acha nahi kia.")
+        
+//     }
+// })
+
+let pizzaKhilaya=true;
+
+let prom= new Promise((res,rej)=>{
+if(pizzaKhilaya==true){
+    return res("thanks for the treat")
+}else{
+    return rej("acha nahi kia tmne")
+}
+})
+.then(function(data){
+console.log(data)})
+.catch(function(data){console.log(data)}) 
+console.log(prom)
+
+//async/await (function m chlein ge)
+async function  getData(){
+let data= await fetch('https://dummyjson.com/products')
+      .then(response => response.json())
+      .then(json => console.log(json))
+}
+getData();
+
+
+
+</script>
+</html>
